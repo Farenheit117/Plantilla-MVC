@@ -1,0 +1,26 @@
+/*Sidebar*/
+#sidebar-p{
+    background-color:  #02063D;
+    border-right: 1px solid #fff9;
+}
+
+/*Nav*/
+#navbar-p {
+    background: linear-gradient(-45deg,  #0c0a75, #02063d);
+    animation: gradientBG 15s ease infinite;
+    background-size: 400% 400%;
+    color: #fff;
+}
+
+/*NAV-EFECTO DE TRANSICION DE COLORES*/
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/*Elementos del navbar*/
+
+.nav-link {
+    color: #aaa !important ;
+}
