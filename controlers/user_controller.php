@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__ . '/../Models/usuario.php');
+require_once(__DIR__ . '/../modelo/usuario.php');
 
 if (!empty($_REQUEST['action'])) {
     user_controller::main($_REQUEST['action']);
@@ -44,14 +44,14 @@ class user_controller
             
             if (count($objUser) > 0) {
                 echo "<center><h1>Usuario Ya existe</h1></center>";
-                echo "<center><h1><a href='../index.php'>Salir</a></h1></center>";
+                echo "<center><h1><a href='../views/index.php'>Salir</a></h1></center>";
             } else {
                 if ($_POST['Clave'] == $_POST['Clave2']) {
 
                     $users = new usuario ($arrayUser);
                     $objUsers = $users->insertar();
                     //var_dump($users);exit();
-                    header('location: ../Views/Login.php');
+                    header('location: ../Views/registro.php?error=false&mensaje=exito');
                 } else {
                     echo "<center><h1>Claves no coinciden</h1></center>";
                     echo "<center><h1><a href='../index.php'>Salir</a></h1></center>";
@@ -123,7 +123,7 @@ class user_controller
                 $_SESSION['usuario'] = $User;
                 $_SESSION['id'] = $Id;
                 $_SESSION['sesion_iniciada'] = true;
-                header('Location: ../Views/pagPrincipal.php');
+                header('Location: ../views/index.php');
 
 
             } else {

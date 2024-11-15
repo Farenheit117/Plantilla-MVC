@@ -94,6 +94,12 @@
                                 <p>General Elements</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="./registro.php" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Registro Usuario</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -140,12 +146,7 @@
                                 <p>Invoice</p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="./profile.php" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Profile</p>
-                            </a>
-                        </li>
+                        
                         
                     </ul>
                 </li>

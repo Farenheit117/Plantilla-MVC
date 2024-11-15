@@ -7,7 +7,7 @@ abstract class conexion
     private $username = "root";
     private $password = "1998";
     private $host = "localhost";
-    private $dbname = "example-php";
+    private $dbname = "admin";
 
     # métodos abstractos para ABM de clases que hereden
     abstract protected static function buscarForId($id);
